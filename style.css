@@ -298,28 +298,26 @@ span {
 }
 
 @media (max-width: 768px) {
-  .doc{
-    overflow-x: hidden;
-    position: absolute;
-  }
+
 
   .cabecalho-menu{
     position: absolute;
     right: 0;
 
   }
-  article{
-    display:none
-  }
+ 
 
   .nav-list {
     display: none;
     flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
     background-color: #222; 
     position: absolute;
-    top: 70px;
+    top: 22vh;
     right: 0;
-    width: 200px;
+    width: 50vh;
+    height: 60vh;
     padding: 1rem;
     z-index: 1000;
   }
