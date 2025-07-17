@@ -15,8 +15,8 @@
 
 .doc {
   background: black;
-  width: 100%;
-  height: 100%;
+  width: 100vh;
+  height: 100vh;
 }
 a {
   text-decoration: none;
@@ -298,10 +298,21 @@ span {
 }
 
 @media (max-width: 768px) {
+  .doc{
+    overflow-x: hidden;
+    position: absolute;
+  }
+
+  .cabecalho-menu{
+    position: absolute;
+    right: 0;
+
+  }
+
   .nav-list {
     display: none;
     flex-direction: column;
-    background-color: #222; /* ou sua cor preferida */
+    background-color: #222; 
     position: absolute;
     top: 70px;
     right: 0;
