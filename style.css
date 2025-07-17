@@ -308,6 +308,9 @@ span {
     right: 0;
 
   }
+  article{
+    display:none
+  }
 
   .nav-list {
     display: none;
