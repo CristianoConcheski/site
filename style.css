@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-html{
+html {
   width: 100vw;
   font-size: 80%;
 }
@@ -24,7 +24,6 @@ html{
   z-index: -1;
   overflow: hidden;
 }
-
 
 a {
   text-decoration: none;
@@ -62,7 +61,6 @@ a {
   list-style: none;
 }
 
-
 .nav-link {
   color: white;
   display: block;
@@ -78,13 +76,12 @@ a {
   background: none;
   border: none;
   cursor: pointer;
-  color: #fff; 
+  color: #fff;
 }
-
-
 
 .cabecalho-menu a:hover {
   background-color: blue;
+  transition: all 600ms ease-in-out;
 }
 
 .frase {
@@ -245,25 +242,81 @@ footer {
 }
 
 .pro {
+  box-sizing: border-box;
   background-color: #c0c0c0;
   text-decoration: none;
 }
 
 .proj {
   background-color: #c0c0c0;
-  display: flex;
   padding: 20px;
   color: black;
 }
 
-.galery-conteiner {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  margin: 0px;
+.conteiner {
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
+  max-width: 700px;
+  margin: 0 auto;
 }
+
+.gallery-wrapper{
+  overflow-x: auto;
+}
+
+.gallery {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: auto;
+  bottom: 0;
+  font-size: 20px;
+  line-height: 250px;
+  width: 40px;
+  color: #fff;
+  transition: all 600ms ease-in-out;
+  background: linear-gradient(to left, transparent 0%, black 200%);
+  opacity: 0.1;
+  cursor: pointer;
+  border: none;
+}
+
+.arrow-left:hover,
+.arrow-right:hover {
+  opacity: 1;
+}
+
+.arrow-right {
+  right: 0;
+  left: auto;
+  text-align: right;
+  background: linear-gradient(to right, transparent 0%, black 200%);
+}
+
+.gallery-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.item {
+  width: 250px;
+  height: 250px;
+  flex-shrink: 0;
+  transition: all 600ms ease-in-out;
+  opacity: 0.5;
+}
+
+.current-item {
+  opacity: 1;
+}
+
 
 .form {
   display: flex;
@@ -344,7 +397,7 @@ span {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #222; 
+    background-color: #222;
     position: absolute;
     top: 23vh;
     right: 0;
@@ -353,7 +406,7 @@ span {
     padding: 1rem;
     z-index: 1000;
   }
-   .nav-list.show {
+  .nav-list.show {
     display: flex;
     position: absolute;
     right: 0;
@@ -367,7 +420,7 @@ span {
     height: auto;
     width: 60%;
   }
-  .comp{
+  .comp {
     display: none;
   }
 

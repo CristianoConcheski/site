@@ -1,35 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Layouts</title>
     <link rel="stylesheet" href="style.css">
     <style>
-          .thumb{
-       width: 200px;
-       height: 200px;
-    }
+        .thumb {
+            width: 200px;
+            height: 200px;
+        }
     </style>
-  
+
 </head>
-<body class="pro" >
-     </header>   
-        <nav style="background-color: black;padding: 20px;">
-          
-            <a href="index.html" style="color: white;font-size: 30px;font-style: italic;text-decoration: none;">Home</a>
-        </nav>
-        
+
+<body class="pro">
+    </header>
+    <nav style="background-color: black;padding: 20px;">
+
+        <a href="index.html" style="color: white;font-size: 30px;font-style: italic;text-decoration: none;">Home</a>
+    </nav>
+
     </header>
     <section class="proj">
         <h2 class="mod">Modelos de páginas mais usados</h2>
     </section>
-    <div class="galery-conteiner">
-        <img src="img/layout/div.jpg" class="thumb">
-        <img src="img/layout/layout1.jpg" class="thumb">
-        <img src="img/layout/layout2.jpg" class="thumb">
-        <img src="img/layout/layout3.jpg" class="thumb">
-
-    </div>   
+    <div class="conteiner">
+        <button class="arrow-left control"aria-label="Prewiewsimage">◀</button>
+        <button class="arrow-right control"aria-label="Nextimage">▶</button>
+        <div class="gallery-wrapper">
+            <div class="gallery">
+                <img src="./img/layout/1.jpg" alt="Modelo 1" class="item current-item">
+                <img src="./img/layout/2.jpg" alt="Modelo 2" class="item">
+                <img src="./img/layout/3.jpg" alt="Modelo 3" class="item">
+                <img src="./img/layout/4.jpeg" alt="Modelo 4" class="item-">
+                <img src="./img/layout/5.jpg" alt="Modelo 5" class="item">
+                <img src="./img/layout/6.jpg" alt="Modelo 6" class="item">
+                <img src="./img/layout/7.jpg" alt="Modelo 7" class="item">
+                <img src="./img/layout/8.png" alt="Modelo 8" class="item">
+                <img src="./img/layout/9.jpg" alt="Modelo 9" class="item">
+                <img src="./img/layout/10.jpg" alt="Modelo 10" class="item">
+                <img src="./img/layout/11.jpg" alt="Modelo 11" class="item">
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
