@@ -370,10 +370,25 @@ span {
   .comp{
     display: none;
   }
+
+  .contact {
+    width: 100vw;
+  }
   .pagcont {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: auto;
+    width: 100vw;
+  }
+
+  .pagcont-whats-n {
+    font-size: 4.2vh;
+  }
+
+  .pagcont-git {
+    font-size: 4.2vh;
+  }
+  .pagcont-email-em {
+    font-size: 3.8vh;
   }
 }
