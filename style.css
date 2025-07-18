@@ -2,8 +2,19 @@
   margin: 0;
   padding: 0;
 }
+
+html{
+  width: 100vw;
+}
+
+.doc {
+  background: black;
+  width: 100vw;
+  height: 100vh;
+}
+
 #matrix {
-  width: 100%;
+  width: 100vw;
   height: 100%;
   margin: 0;
   top: 0;
@@ -13,11 +24,7 @@
   overflow: hidden;
 }
 
-.doc {
-  background: black;
-  width: 100vh;
-  height: 100vh;
-}
+
 a {
   text-decoration: none;
   font-size: 20px;
@@ -314,9 +321,9 @@ span {
     justify-content: space-around;
     background-color: #222; 
     position: absolute;
-    top: 22vh;
+    top: 23vh;
     right: 0;
-    width: 50vh;
+    width: 40vw;
     height: 60vh;
     padding: 1rem;
     z-index: 1000;
@@ -329,5 +336,13 @@ span {
 
   .menu-toggle {
     display: block;
+  }
+
+  .cabecalho-img {
+    height: auto;
+    width: 60%;
+  }
+  .comp{
+    display: none;
   }
 }
