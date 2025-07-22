@@ -253,7 +253,7 @@ footer {
   color: black;
 }
 
-.conteiner {
+.container {
   box-sizing: border-box;
   position: relative;
   padding: 15px;
@@ -303,6 +303,11 @@ footer {
 
 .gallery-wrapper::-webkit-scrollbar {
   display: none;
+}
+
+.gallery-wrapper {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
 }
 
 .item {

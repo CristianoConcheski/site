@@ -50,44 +50,43 @@ function redefinirMsg() {
   }
 }
 
-const menuToggle = document.querySelector('.menu-toggle');
-const navList = document.querySelector('.nav-list');
+const menuToggle = document.querySelector(".menu-toggle");
+const navList = document.querySelector(".nav-list");
 
-menuToggle.addEventListener('click', () => {
-  navList.classList.toggle('show');
+menuToggle.addEventListener("click", () => {
+  navList.classList.toggle("show");
 });
 
 const controls = document.querySelectorAll(".control");
-let currentItem = 0;
+let currentitem = 0;
 const items = document.querySelectorAll(".item");
-const maxItems = items.length;
+const maxitems = items.length;
 
 controls.forEach((control) => {
-  control.addEventListener("click", (e) => {
-    isLeft = e.target.classList.contains("arrow-left");
+  control.addEventListener("click", function () {
+    const isLeft = control.classList.contains("arrow-left");
 
     if (isLeft) {
-      currentItem -= 1;
+      currentitem -= 1;
     } else {
-      currentItem += 1;
+      currentitem += 1;
     }
 
-    if (currentItem >= maxItems) {
-      currentItem = 0;
+    if (currentitem >= maxitems) {
+      currentitem = 0;
     }
 
-    if (currentItem < 0) {
-      currentItem = maxItems - 1;
+    if (currentitem < 0) {
+      currentitem = maxitems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("item-thumb"));
+    items.forEach((item) => item.classList.remove("current-item"));
 
-    items[currentItem].scrollIntoView({
+    items[currentitem].scrollIntoView({
       behavior: "smooth",
-      inline: "center"
+      inline: "center",
     });
 
-    items[currentItem].classList.add("current-item");
+    items[currentitem].classList.add("current-item");
   });
 });
-
