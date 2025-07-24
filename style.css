@@ -123,7 +123,7 @@ a {
   display: flex;
   justify-content: space-between;
   font-size: 30px;
-  font-style: italic;
+  font-style: arial;
   color: black;
 }
 
@@ -135,7 +135,7 @@ aside{
   line-height: 20px;
   max-width: 500px;
   font-size: 40px;
-  font-style: italic;
+  font-style:arial;
   color: white;
   padding: 5px;
 }
@@ -376,7 +376,7 @@ span {
 
 .but {
   background-color: white;
-  width: 70px;
+  width: 50px;
   height: 20px;
   margin-top: 30px;
   padding: 0;
