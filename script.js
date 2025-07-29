@@ -57,7 +57,6 @@ menuToggle.addEventListener("click", () => {
   navList.classList.toggle("show");
 });
 
-
 const box = document.querySelector(".container");
 const imagens = document.querySelectorAll(".container img");
 
@@ -73,6 +72,6 @@ function slider() {
   box.style.transform = `translateX(${-contador * 1250}px)`;
 }
 
-setInterval(slider, 0,2);
+setInterval(slider, 0, 2);
 
 console.log("Slider iniciado");
