@@ -8,7 +8,7 @@ html {
   font-size: 80%;
 }
 
-hr{
+hr {
   width: 100%;
   height: 1px;
   background-color: black;
@@ -133,7 +133,7 @@ a {
   color: black;
 }
 
-aside{
+aside {
   height: 200px;
 }
 
@@ -141,7 +141,7 @@ aside{
   line-height: 20px;
   max-width: 500px;
   font-size: 40px;
-  font-style:arial;
+  font-style: arial;
   color: white;
   padding: 5px;
 }
@@ -235,8 +235,27 @@ footer {
   font-style: italic;
 }
 
-.pagcont-git {
+.pagcont-gith {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding: 10px;
+  color: black;
+}
+
+.pagcont-gi {
   font-size: 3rem;
+  color: black;
+  margin-left: 10px;
+}
+
+.pagcont-git {
+  font-size: 4rem;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   font-style: arial;
 }
 
@@ -246,10 +265,17 @@ footer {
   justify-content: left;
   padding: 10px;
 }
+.pagcont-ema {
+  font-size: 3rem;
+  color: black;
+  margin-right: 10px;
+}
 
 .pagcont-email-em {
   font-style: arial;
   font-size: 3rem;
+  color: black;
+  margin-left: 10px;
 }
 
 .sobre {
@@ -285,7 +311,7 @@ footer {
   color: black;
 }
 
-.sobre-p{
+.sobre-p {
   color: black;
 }
 
@@ -309,7 +335,6 @@ footer {
   margin-top: 0px;
   padding-top: 0%;
 }
-  
 
 .proj {
   background-color: #c0c0c0;
@@ -325,7 +350,7 @@ footer {
   margin: 0 auto;
 }
 
-.gallery-wrapper{
+.gallery-wrapper {
   overflow-x: auto;
 }
 
@@ -370,8 +395,8 @@ footer {
 }
 
 .gallery-wrapper {
-  -ms-overflow-style: none; 
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .item {
@@ -385,7 +410,6 @@ footer {
 .current-item {
   opacity: 1;
 }
-
 
 .form {
   display: flex;
@@ -425,7 +449,7 @@ span {
   padding: 9px;
 }
 
-.op{
+.op {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -446,7 +470,7 @@ span {
   border-radius: 5px;
   display: flex;
   align-items: center;
-  text-align:justify;
+  text-align: justify;
 }
 
 .butl {
@@ -511,7 +535,7 @@ span {
   }
 
   .chamada {
-    font-size: 3.5vh;
+    font-size: 3vh;
     max-width: 90%;
     text-align: center;
   }
@@ -534,11 +558,36 @@ span {
     font-size: 4.2vh;
   }
 
+  .pagcont-gith{
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  .pagcont-gi{
+    font-size: 4.2vh;
+    color: black;
+
+  }
+
   .pagcont-git {
     font-size: 4.2vh;
   }
-  .pagcont-email-em {
+  .pagcont-email {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  }
+  .pagcont-ema {
     font-size: 3.8vh;
+    color: black;
+    margin-bottom: 10px;
+  }
+  .pagcont-email-em {
+    font-size: 3.5vh;
+    color: black;
   }
 
   .form-b {
