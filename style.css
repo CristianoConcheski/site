@@ -402,9 +402,11 @@ footer {
   background-color: white;
   border-radius: 10px;
   padding: 10px;
+  padding-top: 10px;
   margin: 10px;
   width: 100vw;
   height: 100vh;
+  border: #181515 2px solid;
 }
 
 .frame {
