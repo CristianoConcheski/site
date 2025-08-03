@@ -311,12 +311,13 @@ footer {
   justify-content: center;
   width: 100vw;
   height: 60vh;
-  font: 2em sans-serif;
+  font: 3em sans-serif;
   color: black;
 }
 
 .sobre-p {
   color: black;
+  font-size: 0.7em;
 }
 
 .sobre-h2 {
@@ -325,32 +326,57 @@ footer {
 }
 
 
-.carousel-slide{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 240px;
-  height: 20vh;
-  padding: 10px;
+.slider {
+    width: 100vw;
+    height: 300px;
+    margin-bottom: 10px;
+    position: relative;
+    display: grid;
+    border: none;
+    place-items: center;
+    overflow: hidden;
+    background-color: white;
+
 }
 
-.carousel-inner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100em;
-  height: 20vh;
-  transition: 0.7s ease-in-out;
+.slide-track {
+    display: flex;
+    width: calc(150px * 20);
+    animation: scroll 40s linear infinite;
+
 }
-.carousel-item img {
-  width: 15em;
-  height: 20vh;
-  margin: 0 10px;
-  border-radius: 15px;
-  overflow: hidden;
-  align-items: center;
+
+.slide-track:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-150px * 10));
+    }
+}
+
+.slide {
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    perspective: 100px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: transform 1s;
+}
+
+img:hover {
+    transform: translateZ(20px);
 }
 
 .pro {
@@ -437,7 +463,7 @@ footer {
 }
 .aces:hover {
   color: red;
-  transition: all 600ms ease-in-out;
+  transition: all 100ms ease-in-out;
 }
 
 .form {
@@ -628,5 +654,17 @@ span {
     overflow: scroll;
     width: 100%;
     height: 50%;
+  }
+
+  .frame{
+    display: none;
+  }
+
+  .project-info {
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.6rem;
   }
 }
