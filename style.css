@@ -166,8 +166,8 @@ article {
   margin-right: 0;
 }
 
-img {
-  width: 400px;
+img.comp {
+  width: 300px;
   margin-left: 0;
   margin-right: 0;
 }
@@ -665,6 +665,9 @@ span {
     height: auto;
     padding: 20px;
     text-align: center;
+    font-size: 1.6rem;
+  }
+  .sobre-p {
     font-size: 1.6rem;
   }
 }
