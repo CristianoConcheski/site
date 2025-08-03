@@ -341,7 +341,7 @@ footer {
 
 .slide-track {
     display: flex;
-    width: calc(150px * 20);
+    width: calc(150px * 24);
     animation: scroll 40s linear infinite;
 
 }
@@ -356,7 +356,7 @@ footer {
     }
 
     100% {
-        transform: translateX(calc(-150px * 10));
+        transform: translateX(calc(-150px * 12));
     }
 }
 
