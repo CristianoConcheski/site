@@ -284,47 +284,79 @@ footer {
   margin-left: 10px;
 }
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .sobre {
-  background-color: #a9a9a9;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 100vw;
-  height: 100vh;
+    background-color: #a9a9a9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
 }
 
 .sobre-header {
-  background-color: #181515;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  width: 100vw;
-  height: 16vh;
-  margin-top: 0px;
-  padding-top: 0%;
+    background-color: #181515;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 16vh;
+    padding: 20px;
 }
 
 .sobre-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100vw;
-  height: 60vh;
-  font: 3em sans-serif;
-  color: black;
-}
-
-.sobre-p {
-  color: black;
-  font-size: 0.7em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1000px;
+    min-height: 60vh;
+    padding: 40px 20px;
+    text-align: center;
+    color: black;
 }
 
 .sobre-h2 {
-  color: black;
-  font-size: 2em;
+    font-size: 2.5em;
+    margin-bottom: 25px;
+    color: #181515;
+}
+
+.sobre-p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    max-width: 800px;
+    color: #222;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    .sobre-header {
+        min-height: 12vh;
+    }
+
+    .sobre-section {
+        width: 95%;
+        padding: 25px 15px;
+    }
+
+    .sobre-h2 {
+        font-size: 1.8em;
+    }
+
+    .sobre-p {
+        font-size: 1em;
+    }
 }
 
 
@@ -662,14 +694,29 @@ span {
     display: none;
   }
 
+  .sobre-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font: 3em sans-serif;
+    color: black;
+    overflow: hidden;
+  }
+
   .project-info {
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 20px;
     text-align: center;
     font-size: 1.6rem;
   }
   .sobre-p {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
+  }
+  .sobre-h2 {
+    font-size: 3rem;
   }
 }
